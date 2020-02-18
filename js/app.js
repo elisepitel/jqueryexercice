@@ -9,7 +9,7 @@ $('#helpText').on('mouseover', function (){
 
 $('#addNew').on ('click', function () {
   const $newRestaurant = $("input:text").val();
-  $('ul').append($("<li></li>").text($newRestaurant));
+  $('ul').append($('<li>' + $newRestaurant.val() + '</li>'));
 });
 
 // 3. Add the class "strike" to the restaurant name each time it's double clicked. Use event delegation on the ul element to listen for a click event on the ul's list items
